@@ -1,0 +1,268 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  width: 80%;
+  margin-inline: auto;
+}
+
+header {
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("assets/forest3.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.navigation {
+  width: 100%;
+}
+
+.navigation .box-navigations {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navigation .box-navigations .box:nth-child(1) h1 {
+  font-size: 34px;
+  color: #fefefe;
+}
+
+.navigation .box-navigations .box:nth-child(2) ul {
+  display: flex;
+  flex-direction: row;
+}
+
+.navigation .box-navigations .box:nth-child(2) ul li {
+  list-style-type: none;
+  margin-left: 40px;
+}
+
+.navigation .box-navigations .box:nth-child(2) ul li a {
+  text-decoration: none;
+  color: #fefefe;
+  transition: all 0.3s ease;
+}
+
+.navigation .box-navigations .box:nth-child(2) ul li a:hover {
+  color: #44d62c;
+}
+
+/* hero syle */
+header .hero {
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  transform: translate(50%, -50%);
+}
+
+header .hero .h1-bagian-kiri {
+  /* font-size: 100px;
+
+  color: #fefefe;
+  text-align: center; */
+  color: rgba(255, 255, 255, 0.7);
+  text-align: center;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+header .hero .h1-bagian-kanan {
+  color: #fefefe;
+  text-align: center;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+header .hero .hero-center {
+  display: flex;
+  align-items: center;
+}
+
+/* About style  */
+.about {
+  width: 100%;
+  height: 100vh;
+  align-items: center;
+  display: flex;
+  background-color: #f1faee;
+}
+
+.about .box-about {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.about .box-about .box:nth-child(1) h2 {
+  font-size: 30px;
+}
+
+.about .box-about .box:nth-child(1) p#description {
+  line-height: 2;
+}
+.about .box-about .box:nth-child(2) img {
+  width: 500px;
+  border-radius: 10px;
+}
+
+/* Famous */
+
+.famous {
+  width: 100%;
+  height: 100vh;
+  align-items: center;
+  background-color: #2b2d42;
+}
+
+.famous h2 {
+  text-align: center;
+  font-size: 40px;
+}
+
+.famous .box-famous {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 50px;
+}
+.famous .box-famous .box {
+  text-align: center;
+  margin-inline: 20px;
+}
+.famous .box-famous .box img {
+  width: 300px;
+  border-radius: 10px;
+}
+
+/* galeri */
+.galeri {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  background-color: #f1faee;
+}
+
+.galeri .box-galeri {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.galeri .box-galeri img {
+  width: 300px;
+  height: 200px;
+  margin: 10px;
+}
+
+/* Solution */
+
+.solution {
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("assets/bg-solution.jpeg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  display: flex;
+  align-items: center;
+}
+
+.solution .box-solution {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+  /* justify-content: center; */
+  /* align-items: center; */
+}
+.solution .box-solution .box:nth-child(1) h2 {
+  font-size: 40px;
+  font-weight: bold;
+  text-align: left;
+  color: #fefefe;
+}
+
+/* .solution .box-solution .box:nth-child(2) img{
+    display: inline;
+    width: 50px;
+} */
+.solution .box-solution .box:nth-child(2) ul li {
+  list-style-type: none;
+  color: #44d62c;
+  line-height: 3;
+  display: flex;
+}
+.solution .box-solution .box:nth-child(2) ul li ul {
+  display: flex;
+  margin-top: 20px;
+}
+
+.solution .box-solution .box:nth-child(2) ul li ul li {
+  margin-left: 10px;
+}
+
+/* Join */
+.join {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #2b2d42;
+}
+
+.join .box-join {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.join .box-join h1 {
+  font-size: 50px;
+  font-weight: 700;
+}
+.join .box-join form table tr {
+  display: flex;
+  flex-direction: column;
+}
+
+.join .box-join form table tr td label {
+  font-size: 20px;
+  color: #fefefe;
+}
+
+.join .box-join form table tr td input {
+  padding: 15px 60px 15px 60px;
+  margin-top: 5px;
+  margin-bottom: 15px;
+}
+
+/* Footer */
+footer {
+  background-color: #2b2d42;
+}
+footer p {
+  text-align: center;
+  padding: 20px 0px 20px 0px;
+  color: #fefefe;
+}
